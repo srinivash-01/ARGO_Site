@@ -1,0 +1,380 @@
+
+const Datas_Carousel = mongoose.model('Datas_Carousel', {
+  Title: { type: String },
+  datas: [{
+    image: { type: String },
+    title: { type: String },
+    price: { type: String },
+    rating: { type: String },
+    color: { type: String },
+    discription: { type: String },
+    Category: {type: String}
+  }]
+}
+);
+
+
+var new_item = new Datas_Carousel({
+  Title: "Todays Offers !",
+  datas: [{
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "Boss Smart Watch",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "2",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "3",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "4",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "5",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "6",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Abaya"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "7",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "8",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "9",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "10",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "11",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "12",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "13",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "14",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "15",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Blouses"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "16",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "17",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "18",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "19",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "20",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "21",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "22",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "23",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "24",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "25",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "26",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Dupattas"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "27",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Patiala"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "28",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Patiala"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "29",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Patiala"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "30",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Patiala"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "31",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Patiala"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "32",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "33",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "34",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "35",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "36",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "37",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "38",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "39",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "40",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "41",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "42",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "43",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "44",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }, {
+    image: "https://lh5.googleusercontent.com/SygCN1TfvxtSdaALMpHxA83XnJVBGP4N2C16B-lAsfbNEiUiaa7t-VzITYzX3O-Afd4=w2400",
+    title: "45",
+    price: "1500",
+    rating: "4.5",
+    color: "Blue",
+    discription: "Deal on! Shopping on!",
+    Category: "Gowns"
+  }]
+});

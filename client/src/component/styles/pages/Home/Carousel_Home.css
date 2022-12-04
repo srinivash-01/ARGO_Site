@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+.image-zoom-in:hover{
+    overflow: hidden;
+    height: 300px;
+}
+.para {
+    margin-top: 2px;
+    margin-bottom: 0rem;
+}
+p{
+    font-family: 'PT Sans', sans-serif;
+}

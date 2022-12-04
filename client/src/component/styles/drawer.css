@@ -1,0 +1,15 @@
+.drawerTabs:hover{
+    background-color: blue;
+}
+.btn-danger:focus{
+    box-shadow: none;
+}
+.css-10hburv-MuiTypography-root {
+    margin: 0;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    display: block;
+}
